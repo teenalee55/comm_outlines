@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Outline Reviewer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .container {
+            max-width: 800px;
+        }
+        .loading {
+            display: none;
+        }
+        .prose-table {
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+        }
+        .prose-table th, .prose-table td {
+            padding: 8px;
+            border: 1px solid #e5e7eb;
+        }
+        .prose-table th {
+            background-color: #f9fafb;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="container bg-white rounded-xl shadow-lg p-8 space-y-6">
+        <header class="text-center">
+            <h1 class="text-3xl font-bold text-gray-800">Speech Outline Reviewer</h1>
+            <p class="mt-2 text-gray-600">Review your speech outline against the assignment requirements and rubric.</p>
+        </header>
+
+        <main class="space-y-6">
+            <!-- Assignment Requirements Section -->
+            <div class="p-6 bg-gray-50 rounded-lg shadow-inner border border-gray-200">
+                <h2 class="text-xl font-semibold text-gray-800 mb-3">Assignment Requirements</h2>
+                <div class="prose text-gray-700">
+                    <p><strong>Speech Type:</strong> Demonstrative Speech</p>
+                    <p><strong>Purpose:</strong> To demonstrate a skill that would be useful for the audience to learn.</p>
+                    <p><strong>Length:</strong> 4-6 minutes (a 30-second grace period is allowed). Length is a key grading criterion.</p>
+                    <p><strong>Outline Format:</strong> Prepare a formal sentence outline. It must follow the provided template and include a clear thesis statement, a forecast of three points, transitions, a review of points, and a thought-provoking conclusion.</p>
+                    <p><strong>Delivery:</strong> Extemporaneous delivery and appropriate attire are required.</p>
+                    <p><strong>Visual Aids:</strong> Optional. If used, presentations cannot be screen-shared on Zoom. Maximum of 5 slides, with no more than 10 words per slide.</p>
+                </div>
+            </div>
+
+            <!-- Template Section -->
+            <div class="p-6 bg-gray-50 rounded-lg shadow-inner border border-gray-200">
+                <h2 class="text-xl font-semibold text-gray-800 mb-3">Outline Template</h2>
+                <p class="text-sm text-gray-600 mb-2">Use this template as a guide for your outline:</p>
+                <pre class="bg-white p-4 rounded-lg border border-gray-300 overflow-auto text-sm text-gray-800">
+Name:
+
+Date:
+
+Topic:
+
+General Purpose:
+Either To Inform or To Persuade (pick one based on assignment)
+
+Specific Purpose:
+By the end of my speech, the audience will...
+
+Thesis Statement:
+
+I. Introduction
+    A. Attention Getter: Something that grabs the attention of the audience. Examples of this: startling statistics, stories, rhetorical questions, quotations, scenarios, etc. This point should be more than one sentence long.
+    B. Reason to Listen: tell the audience why they should listen to your speech. make this relevant to them.
+    C. Thesis Statement: copy exactly as what is written above.
+    D. Credibility: Tell us what personally connects you to this topic or if you are not connected to the topic personally, what type of research have you done to establish credibility?
+    E. Preview of Main Points: this should be brief and can be one sentence to encompass all the points.
+
+Transition: To start...
+
+II. First main point topic sentence
+    A. Idea of development or support for the first point. This should also be written in complete sentence(s).
+        1. Support material (ex: statistics, quotation, etc. - cite source)
+        2. Support material (ex: statistics, quotation, etc. - cite source)
+    B. Another idea of development or support for the first point. This should be in sentence(s).
+        1. Support material (ex: statistics, quotation, etc. - cite source)
+        2. Support material (ex: statistics, quotation, etc. - cite source)
+    C. More development, if needed.
+
+Transition: Statement of movement that looks back (internal summary) and looks forward (preview).
+
+III. Second main point topic sentence
+    A. Idea of development or support for the first point. This should also be written in sentence(s).
+        1. Support material (ex: statistics, quotation, etc. - cite source)
+        2. Support material (ex: statistics, quotation, etc. - cite source)
+    B. Another idea of development or support for the first point. This should be in sentence(s).
+        1. Support material (ex: statistics, quotation, etc. - cite source)
+        2. Support material (ex: statistics, quotation, etc. - cite source)
+    C. More development, if needed.
+
+Transition: Statement of movement that looks back (internal summary) and looks forward (preview).
+
+IV. Third main point topic sentence
+    A. Idea of development or support for the first point. This should also be written in sentence(s).
+        1. Support material (ex: statistics, quotation, etc. - cite source)
+        2. Support material (ex: statistics, quotation, etc. - cite source)
+    B. Another idea of development or support for the first point. This should be in sentence(s).
+        1. Support material (ex: statistics, quotation, etc. - cite source)
+        2. Support material (ex: statistics, quotation, etc. - cite source)
+    C. More development, if needed.
+
+V. Conclusion
+    A. Review of Main Points:
+    B. Thesis statement: Exactly the same as above.
+    C. Closure: Develop a creative closing that will give the speech a sense of ending. This point may be more than one sentence. You should refer back to your Attention-Getter.
+
+References
+All references need to be cited in a formal system (APA, MLA, etc.). Use high quality, primary sources. If you are using any questionable sources, please justify choices in annotated bibliography. Be sure to make sure that the references are in alphabetical order.
+</pre>
+            </div>
+
+            <!-- Rubric Section -->
+            <div class="p-6 bg-gray-50 rounded-lg shadow-inner border border-gray-200">
+                <h2 class="text-xl font-semibold text-gray-800 mb-3">Rubric</h2>
+                <table class="prose-table">
+                    <thead>
+                        <tr>
+                            <th>Criteria</th>
+                            <th>Excellent (4 pts)</th>
+                            <th>Good (3 pts)</th>
+                            <th>Satisfactory (2 pts)</th>
+                            <th>Needs Improvement (1 pt)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Format</strong><br><small>Indentation & Labels</small></td>
+                            <td>Follows correct outline format with clear hierarchy, indentation, and logical structure.</td>
+                            <td>Mostly follows outline format but has minor formatting issues.</td>
+                            <td>Attempts outline format but is inconsistent or unclear.</td>
+                            <td>Does not follow standard outline format.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Components</strong><br><small>Intro & Conclusion</small></td>
+                            <td>Clearly and correctly labels all speech components.</td>
+                            <td>Labels most components correctly, but some may be inconsistent.</td>
+                            <td>Labels are present but unclear or incomplete.</td>
+                            <td>Lacks clear labeling or is missing key sections.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Support & Development</strong><br><small>Main Points</small></td>
+                            <td>Main points are exceptionally well-developed with strong, relevant supporting details and clear reasoning.</td>
+                            <td>Main points are well-developed with good supporting details and reasoning.</td>
+                            <td>Some supporting details, but ideas could be more developed or clearer.</td>
+                            <td>Minimal supporting details; arguments are weak or unclear.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Transitions</strong></td>
+                            <td>Transitions are clearly planned, smooth, and effectively connect ideas.</td>
+                            <td>Clearly indicates a movement to the next section but could be more natural or refined.</td>
+                            <td>Some transitions are unclear or ineffective.</td>
+                            <td>Transitions are missing or abrupt.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Writing</strong></td>
+                            <td>Writing is clear, concise, and free of errors; sentences are well-structured.</td>
+                            <td>Writing is mostly clear with minor errors; sentence structure is solid.</td>
+                            <td>Some grammar or clarity issues.</td>
+                            <td>Frequent grammar or clarity issues make the outline difficult to understand.</td>
+                        </tr>
+                    </tbody>
